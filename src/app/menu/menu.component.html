@@ -1,0 +1,11 @@
+<header [class.headerDark]="darkeMode" class="sectionHeader">
+    <img *ngIf="!darkeMode" routerLink="/" src="assets/img/Group 228.png" />
+    <img *ngIf="darkeMode" routerLink="/" src="assets/img/flight-takeoff-line.png" />
+    <div [class.darkLinks]="darkeMode">
+        <a routerLink="/">Home</a>
+        <a routerLink="/data-protection">Datenschutz</a>
+        <a routerLink="/imprint">CV</a>
+        <a routerLink="/imprint">Projekte</a>
+        <a routerLink="/imprint">Impressum</a>
+    </div>
+</header>
